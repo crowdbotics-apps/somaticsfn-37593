@@ -1,35 +1,16 @@
-import React from "react"
-import {
-  View,
-  Image,
-  ImageBackground,
-  TouchableOpacity,
-  Text,
-  Button,
-  Switch,
-  TextInput,
-  StyleSheet,
-  ScrollView
-} from "react-native"
-import Icon from "react-native-vector-icons/FontAwesome"
-import { CheckBox } from "react-native-elements"
-import { connect } from "react-redux"
-import {
-  widthPercentageToDP as wp,
-  heightPercentageToDP as hp
-} from "react-native-responsive-screen"
-import { getNavigationScreen } from "@screens"
+import React from "react";
+import { View, ImageBackground, Text, StyleSheet, ScrollView } from "react-native";
+import { connect } from "react-redux";
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-native-responsive-screen";
 export class Blank extends React.Component {
   constructor(props) {
-    super(props)
-
-    this.state = {}
+    super(props);
+    this.state = {};
   }
-  render = () => (
-    <ScrollView
-      contentContainerStyle={{ flexGrow: 1 }}
-      style={styles.ScrollView_1}
-    >
+
+  render = () => <ScrollView contentContainerStyle={{
+    flexGrow: 1
+  }} style={styles.ScrollView_1}>
       <View style={styles.View_2} />
       <View style={styles.View_931_18951} />
       <View style={styles.View_931_18953}>
@@ -52,47 +33,33 @@ export class Blank extends React.Component {
           <Text style={styles.Text_I931_18961_119_97}>9:41</Text>
         </View>
         <View style={styles.View_I931_18961_119_98}>
-          <ImageBackground
-            source={{
-              uri:
-                "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/aa52a0dc-9edc-4f8e-9054-9b088010b3ba"
-            }}
-            style={styles.ImageBackground_I931_18961_119_99}
-          />
+          <ImageBackground source={{
+          uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/aa52a0dc-9edc-4f8e-9054-9b088010b3ba"
+        }} style={styles.ImageBackground_I931_18961_119_99} />
         </View>
         <View style={styles.View_I931_18961_119_104}>
-          <ImageBackground
-            source={{
-              uri:
-                "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/8c1d3bf0-1177-49c2-8a4d-120ecb5f8647"
-            }}
-            style={styles.ImageBackground_I931_18961_119_105}
-          />
+          <ImageBackground source={{
+          uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/8c1d3bf0-1177-49c2-8a4d-120ecb5f8647"
+        }} style={styles.ImageBackground_I931_18961_119_105} />
         </View>
         <View style={styles.View_I931_18961_119_109}>
-          <ImageBackground
-            source={{
-              uri:
-                "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/7d8097d2-d569-45ac-9ca0-dae007f0f018"
-            }}
-            style={styles.ImageBackground_I931_18961_119_110}
-          />
+          <ImageBackground source={{
+          uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/7d8097d2-d569-45ac-9ca0-dae007f0f018"
+        }} style={styles.ImageBackground_I931_18961_119_110} />
         </View>
       </View>
-      <ImageBackground
-        source={{
-          uri:
-            "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/ba0cf3be-ed82-46bb-bb84-692f6c10ad58"
-        }}
-        style={styles.ImageBackground_947_12501}
-      />
-    </ScrollView>
-  )
+      <ImageBackground source={{
+      uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/ba0cf3be-ed82-46bb-bb84-692f6c10ad58"
+    }} style={styles.ImageBackground_947_12501} />
+    </ScrollView>;
 }
-
 const styles = StyleSheet.create({
-  ScrollView_1: { backgroundColor: "rgba(24, 26, 32, 1)" },
-  View_2: { height: hp("127%") },
+  ScrollView_1: {
+    backgroundColor: "rgba(24, 26, 32, 1)"
+  },
+  View_2: {
+    height: hp("127%")
+  },
   View_931_18951: {
     width: wp("25%"),
     minWidth: wp("25%"),
@@ -304,12 +271,14 @@ const styles = StyleSheet.create({
     top: hp("29%"),
     resizeMode: "cover"
   }
-})
+});
 
 const mapStateToProps = state => {
-  return {}
-}
+  return {};
+};
+
 const mapDispatchToProps = () => {
-  return {}
-}
-export default connect(mapStateToProps, mapDispatchToProps)(Blank)
+  return {};
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Blank);

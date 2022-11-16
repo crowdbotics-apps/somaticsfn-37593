@@ -1,35 +1,16 @@
-import React from "react"
-import {
-  View,
-  Image,
-  ImageBackground,
-  TouchableOpacity,
-  Text,
-  Button,
-  Switch,
-  TextInput,
-  StyleSheet,
-  ScrollView
-} from "react-native"
-import Icon from "react-native-vector-icons/FontAwesome"
-import { CheckBox } from "react-native-elements"
-import { connect } from "react-redux"
-import {
-  widthPercentageToDP as wp,
-  heightPercentageToDP as hp
-} from "react-native-responsive-screen"
-import { getNavigationScreen } from "@screens"
+import React from "react";
+import { View, ImageBackground, Text, StyleSheet, ScrollView } from "react-native";
+import { connect } from "react-redux";
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-native-responsive-screen";
 export class Blank extends React.Component {
   constructor(props) {
-    super(props)
-
-    this.state = {}
+    super(props);
+    this.state = {};
   }
-  render = () => (
-    <ScrollView
-      contentContainerStyle={{ flexGrow: 1 }}
-      style={styles.ScrollView_1}
-    >
+
+  render = () => <ScrollView contentContainerStyle={{
+    flexGrow: 1
+  }} style={styles.ScrollView_1}>
       <View style={styles.View_2} />
       <View style={styles.View_931_18839}>
         <View style={styles.View_931_18840}>
@@ -53,13 +34,9 @@ export class Blank extends React.Component {
             <View style={styles.View_931_18848}>
               <View style={styles.View_I931_18848_442_2485}>
                 <View style={styles.View_I931_18848_442_2474} />
-                <ImageBackground
-                  source={{
-                    uri:
-                      "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/8fe74a75-d20d-41fb-a2db-5950f89d556a"
-                  }}
-                  style={styles.ImageBackground_I931_18848_442_2486}
-                />
+                <ImageBackground source={{
+                uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/8fe74a75-d20d-41fb-a2db-5950f89d556a"
+              }} style={styles.ImageBackground_I931_18848_442_2486} />
               </View>
             </View>
           </View>
@@ -70,13 +47,9 @@ export class Blank extends React.Component {
             <View style={styles.View_931_18851}>
               <View style={styles.View_I931_18851_442_2485}>
                 <View style={styles.View_I931_18851_442_2474} />
-                <ImageBackground
-                  source={{
-                    uri:
-                      "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/ca857f61-dd13-4e34-a0dd-1e3427a42c23"
-                  }}
-                  style={styles.ImageBackground_I931_18851_442_2486}
-                />
+                <ImageBackground source={{
+                uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/ca857f61-dd13-4e34-a0dd-1e3427a42c23"
+              }} style={styles.ImageBackground_I931_18851_442_2486} />
               </View>
             </View>
           </View>
@@ -95,13 +68,9 @@ export class Blank extends React.Component {
             <View style={styles.View_931_18857}>
               <View style={styles.View_I931_18857_442_2485}>
                 <View style={styles.View_I931_18857_442_2474} />
-                <ImageBackground
-                  source={{
-                    uri:
-                      "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/39b750b3-d2ed-46ac-9b8b-b921da326a5f"
-                  }}
-                  style={styles.ImageBackground_I931_18857_442_2486}
-                />
+                <ImageBackground source={{
+                uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/39b750b3-d2ed-46ac-9b8b-b921da326a5f"
+              }} style={styles.ImageBackground_I931_18857_442_2486} />
               </View>
             </View>
           </View>
@@ -140,40 +109,30 @@ export class Blank extends React.Component {
           <Text style={styles.Text_I931_18867_119_97}>9:41</Text>
         </View>
         <View style={styles.View_I931_18867_119_98}>
-          <ImageBackground
-            source={{
-              uri:
-                "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/b91c831b-5607-4d82-a0cb-7ad9502d8590"
-            }}
-            style={styles.ImageBackground_I931_18867_119_99}
-          />
+          <ImageBackground source={{
+          uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/b91c831b-5607-4d82-a0cb-7ad9502d8590"
+        }} style={styles.ImageBackground_I931_18867_119_99} />
         </View>
         <View style={styles.View_I931_18867_119_104}>
-          <ImageBackground
-            source={{
-              uri:
-                "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/102bd40d-8179-4f98-b7bc-d4bd9ac54921"
-            }}
-            style={styles.ImageBackground_I931_18867_119_105}
-          />
+          <ImageBackground source={{
+          uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/102bd40d-8179-4f98-b7bc-d4bd9ac54921"
+        }} style={styles.ImageBackground_I931_18867_119_105} />
         </View>
         <View style={styles.View_I931_18867_119_109}>
-          <ImageBackground
-            source={{
-              uri:
-                "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/ee9a2f5d-0d2c-4851-9e26-99355db1797f"
-            }}
-            style={styles.ImageBackground_I931_18867_119_110}
-          />
+          <ImageBackground source={{
+          uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/ee9a2f5d-0d2c-4851-9e26-99355db1797f"
+        }} style={styles.ImageBackground_I931_18867_119_110} />
         </View>
       </View>
-    </ScrollView>
-  )
+    </ScrollView>;
 }
-
 const styles = StyleSheet.create({
-  ScrollView_1: { backgroundColor: "rgba(24, 26, 32, 1)" },
-  View_2: { height: hp("127%") },
+  ScrollView_1: {
+    backgroundColor: "rgba(24, 26, 32, 1)"
+  },
+  View_2: {
+    height: hp("127%")
+  },
   View_931_18839: {
     flexGrow: 1,
     width: wp("100%"),
@@ -778,12 +737,14 @@ const styles = StyleSheet.create({
     left: wp("0%"),
     top: hp("0%")
   }
-})
+});
 
 const mapStateToProps = state => {
-  return {}
-}
+  return {};
+};
+
 const mapDispatchToProps = () => {
-  return {}
-}
-export default connect(mapStateToProps, mapDispatchToProps)(Blank)
+  return {};
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Blank);

@@ -17,8 +17,8 @@ const _styles = StyleSheet.create({
     borderRadius: 0
   },
   PtDnvgPG: {
-    left: -88,
-    top: -40,
+    left: -146,
+    top: -17,
     position: "absolute",
     height: 779,
     width: 531,

@@ -1,35 +1,16 @@
-import React from "react"
-import {
-  View,
-  Image,
-  ImageBackground,
-  TouchableOpacity,
-  Text,
-  Button,
-  Switch,
-  TextInput,
-  StyleSheet,
-  ScrollView
-} from "react-native"
-import Icon from "react-native-vector-icons/FontAwesome"
-import { CheckBox } from "react-native-elements"
-import { connect } from "react-redux"
-import {
-  widthPercentageToDP as wp,
-  heightPercentageToDP as hp
-} from "react-native-responsive-screen"
-import { getNavigationScreen } from "@screens"
+import React from "react";
+import { View, ImageBackground, Text, StyleSheet, ScrollView } from "react-native";
+import { connect } from "react-redux";
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-native-responsive-screen";
 export class Blank extends React.Component {
   constructor(props) {
-    super(props)
-
-    this.state = {}
+    super(props);
+    this.state = {};
   }
-  render = () => (
-    <ScrollView
-      contentContainerStyle={{ flexGrow: 1 }}
-      style={styles.ScrollView_1}
-    >
+
+  render = () => <ScrollView contentContainerStyle={{
+    flexGrow: 1
+  }} style={styles.ScrollView_1}>
       <View style={styles.View_2} />
       <View style={styles.View_931_18869}>
         <View style={styles.View_931_18870}>
@@ -88,40 +69,30 @@ export class Blank extends React.Component {
           <Text style={styles.Text_I931_18888_119_97}>9:41</Text>
         </View>
         <View style={styles.View_I931_18888_119_98}>
-          <ImageBackground
-            source={{
-              uri:
-                "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/a732da06-7bd3-49d1-910d-2ee27206c0db"
-            }}
-            style={styles.ImageBackground_I931_18888_119_99}
-          />
+          <ImageBackground source={{
+          uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/a732da06-7bd3-49d1-910d-2ee27206c0db"
+        }} style={styles.ImageBackground_I931_18888_119_99} />
         </View>
         <View style={styles.View_I931_18888_119_104}>
-          <ImageBackground
-            source={{
-              uri:
-                "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/8dcf82cc-9bd4-43a5-a333-656ce51d19b5"
-            }}
-            style={styles.ImageBackground_I931_18888_119_105}
-          />
+          <ImageBackground source={{
+          uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/8dcf82cc-9bd4-43a5-a333-656ce51d19b5"
+        }} style={styles.ImageBackground_I931_18888_119_105} />
         </View>
         <View style={styles.View_I931_18888_119_109}>
-          <ImageBackground
-            source={{
-              uri:
-                "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/3487b721-31f5-4509-a4bc-ce1b5d39d072"
-            }}
-            style={styles.ImageBackground_I931_18888_119_110}
-          />
+          <ImageBackground source={{
+          uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/3487b721-31f5-4509-a4bc-ce1b5d39d072"
+        }} style={styles.ImageBackground_I931_18888_119_110} />
         </View>
       </View>
-    </ScrollView>
-  )
+    </ScrollView>;
 }
-
 const styles = StyleSheet.create({
-  ScrollView_1: { backgroundColor: "rgba(24, 26, 32, 1)" },
-  View_2: { height: hp("127%") },
+  ScrollView_1: {
+    backgroundColor: "rgba(24, 26, 32, 1)"
+  },
+  View_2: {
+    height: hp("127%")
+  },
   View_931_18869: {
     flexGrow: 1,
     width: wp("100%"),
@@ -533,12 +504,14 @@ const styles = StyleSheet.create({
     left: wp("0%"),
     top: hp("0%")
   }
-})
+});
 
 const mapStateToProps = state => {
-  return {}
-}
+  return {};
+};
+
 const mapDispatchToProps = () => {
-  return {}
-}
-export default connect(mapStateToProps, mapDispatchToProps)(Blank)
+  return {};
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Blank);
